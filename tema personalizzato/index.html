@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: `#3490dc`,
+                        secondary: `#ffed4a`,
+                        accent: `#38b2ac`,
+                        dark: `#2d3748`,
+                    },
+                    fontFamily: {
+                        custom: [`"Segoe UI"`, `Arial`, `sans.serif`]
+                    },
+                    spacing: {
+                        128: `32rem`,
+                        144: `36rem`,
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="font-custom bg-gray-100 text-dark">
+    <header class="bg-primary text-white p-6">
+        <h1 class="text-3xl">Tema personalizzato</h1>
+    </header>
+
+    <main class="p-8">
+        <section class="mb-12">
+            <h2 class="text-2xl text-primary">Esempio di tema personalizzato</h2>
+            <p class="text-lg mt-4">Nuovi colori font e spaziature</p>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-4 mt-8">
+        <p>Tema personalizzato</p>
+    </footer>
+
+    
+</body>
+</html>
